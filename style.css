@@ -1,6 +1,7 @@
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 
 header {
@@ -9,7 +10,7 @@ header {
     background: url(images/background.png);
     background-position: center;
     background-size: cover;
-    padding: 20px 40px;
+    padding: 20px 7%;
 }
 
 .navbar {
@@ -25,7 +26,6 @@ header {
 
 nav ul {
     list-style: none;
-    margin: 10px 50px;
 }
 
 nav ul li {
@@ -36,7 +36,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: azure;
-    margin: 20px;
+    margin-left: 40px;
     transition: all 0.1s ease-in 0s;
 }
 
@@ -75,10 +75,12 @@ nav ul li a:hover{
 
 .download {
     position: absolute;
-    right: 20px;
+    right: 7%;
     bottom: 80px;
     display: flex;
     align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
     transition: background 0.1s ease-in 0s;
 }
 
@@ -103,4 +105,8 @@ nav ul li a:hover{
     100% {
         transform: translateY(-10px);
     }     
+}
+
+.download:hover {
+    background: #ff3e3b;
 }
